@@ -1,0 +1,3 @@
+*.drawio
+__pycache__
+venv/
