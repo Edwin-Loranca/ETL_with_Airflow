@@ -7,7 +7,7 @@ This project is an example of how to create an ETL data pipeline orchestrated wi
 ## Process
 * **DAG 1**.- This DAG simulates loading data from a source databaes into the temp_data folder, creating a exact temporal copy of the data.
 
-* **DAG 2**.- This DAG have 4 file sensors:  
+* **DAG 2**.- This DAG contains 4 file sensors:  
     * **_Waiting db file_**: This sensor is waiting for temp file into the temp_data folder, once that file arrives, it triggers DAG 3.  
     * **_Waiting raw file_**: This sensor is waiting for raw data file into the raw folder, once that file arrives, it triggers DAG 4.  
     * **_Waiting clean file_**: This sensor is waiting for clean data file into the clean folder, once that file arrives, it triggers DAG 5.  
